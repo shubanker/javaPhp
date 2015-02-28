@@ -1,3 +1,4 @@
+package Php;
 
 public class StringFunctions extends FileFunctions {
 	public static String str_replace(String search,String replace,String subject){

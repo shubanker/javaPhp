@@ -1,3 +1,4 @@
+package Php;
 public class basic{
 	//Echo
 	public static void echo(String sting){System.out.print(sting);}

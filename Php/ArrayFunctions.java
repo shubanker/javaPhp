@@ -1,3 +1,4 @@
+package Php;
 
 public class ArrayFunctions extends MathFunctions{
 	

@@ -151,4 +151,32 @@ public class StringFunctions extends FileFunctions {
 		}
 		return emplode(st);
 	}
+	
+	/*
+	 * Regex Methods
+	 * The pattern syntax must be in Java format and not in PHP format.
+	 * PS:I have noticed normal regex syntax works preety well.
+	 */
+	public static boolean preg_match(String pattern,String string) {
+		try {
+			return string.matches(pattern);
+		} catch (Exception e) {
+			return false;
+		}
+	}
+	public static String preg_replace(String pattern,String replace,String string) {
+		try {
+			return string.replaceAll(pattern, replace);
+		} catch (Exception e) {
+			return "";
+		}
+	}
+	public static String[] preg_split(String pattern,String string){
+		try {
+			return string.split(pattern);
+		} catch (Exception e) {
+			return null;
+		}
+	}
+	
 }

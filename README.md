@@ -87,7 +87,7 @@ Some of the functions are listed below.
     get_input_double()
     get_input_long()
     get_input_char()
-    isPrime()
+    is_prime()
 **there are some limitations on these functions.*
 
 ***This functions uses an external class [BCrypt](http://www.mindrot.org/projects/jBCrypt/) by [mindrot.org](http://www.mindrot.org)*

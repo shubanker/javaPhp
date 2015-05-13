@@ -135,7 +135,7 @@ public class ExtraFunctions extends Security {
 //		echo(++count);
 		return true;
 	}*/
-	public static boolean isPrime(int number){
+	public static boolean is_prime(int number){
 		
 		//Checking for negative numbers.
 		if (number<0) {

@@ -8,7 +8,7 @@ public class Average {
 		n=0;
 		while(true){
 			try {
-				sum+=Php.get_input_int("Enter the number or to exit Enter any character.");
+				sum+=Php.getInputInt("Enter the number or to exit Enter any character.");
 				n++;
 			} catch (Exception e) {
 				break;

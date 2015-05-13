@@ -6,14 +6,14 @@ public class Inputs {
 		/*
 		 * Taking Inputs
 		 */
-		String s=Php.get_input();
+		String s=Php.getInput();
 		/*
 		 * You can Even Pass a message as parameter which will be displayed before taking inputs.
 		 */
-		String s2=Php.get_input("Enter Your Name");
+		String s2=Php.getInput("Enter Your Name");
 		//You can get inputs of type you want.
-		int n=Php.get_input_int("Enter a Number");
-		float f=Php.get_input_float("Enter a Float value");
+		int n=Php.getInputInt("Enter a Number");
+		float f=Php.getInputFloat("Enter a Float value");
 		
 	}
 

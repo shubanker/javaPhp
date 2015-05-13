@@ -1,11 +1,11 @@
 package Php;
 
 public class StringFunctions extends FileFunctions {
-	public static String str_replace(String search,String replace,String subject){
+	public static String strReplace(String search,String replace,String subject){
 		return subject.replaceAll(search, replace);
 	}
 	//For Replacing Multiple Values with one
-	private static String str_replace(String search[],String replace,String subject,boolean isCaseSensitive) {
+	private static String strReplace(String search[],String replace,String subject,boolean isCaseSensitive) {
 		int min=0,start=0,toReplace=0,pos;
 		
 		//Finding the first value to replace
@@ -31,31 +31,31 @@ public class StringFunctions extends FileFunctions {
 		}
 		return subject;
 	}
-	public static String str_replace(String search[],String replace,String subject){
-		return str_replace(search, replace, subject, true);
+	public static String strReplace(String search[],String replace,String subject){
+		return strReplace(search, replace, subject, true);
 	}
 	
-	public static String str_ireplace(String search,String replace,String subject){
+	public static String strIreplace(String search,String replace,String subject){
 		return subject.replaceAll("(?i)"+search, replace);
 	}
 
-	public static String str_ireplace(String search[],String replace,String subject){
-		return str_replace(search, replace, subject, false);
+	public static String strIreplace(String search[],String replace,String subject){
+		return strReplace(search, replace, subject, false);
 	}
 	
 	
 	public static int strlen(String string){
 		return string.length();
 	}
-	public static String str_repeat(String string,int iterations) {
+	public static String strRepeat(String string,int iterations) {
 		if (iterations<1) {
 			return "";
 		}else {
-			return iterations==1?string:(str_repeat(string+string, (int)iterations/2)+(iterations%2==0?"":string));
+			return iterations==1?string:(strRepeat(string+string, (int)iterations/2)+(iterations%2==0?"":string));
 		}
 		
 	}
-//	public static String str_repeat(String string,int iterations) {
+//	public static String strRepeat(String string,int iterations) {
 //		/*
 //		String t="";
 //		while(n-->0){
@@ -66,7 +66,7 @@ public class StringFunctions extends FileFunctions {
 //		if(iterations<=1)
 //			return iterations==1?string:"";
 //		
-//		String tem="",main_temp=string;
+//		String tem="",mainTemp=string;
 //		if(iterations%2!=0){
 //			iterations--;
 //			tem=string;
@@ -74,18 +74,18 @@ public class StringFunctions extends FileFunctions {
 //		while(iterations>1){
 //			if(iterations%2==0){
 //				iterations/=2;
-//				main_temp+=main_temp;
+//				mainTemp+=mainTemp;
 //			}else{
 //				iterations--;
-//				tem+=main_temp;
+//				tem+=mainTemp;
 //			}
 //		}
-//		return main_temp+tem;
+//		return mainTemp+tem;
 //	}
 	
 	
 	/*
-	public static String str_repeat(String s,int n){
+	public static String strRepeat(String s,int n){
 		String tem,main;
 		tem="";
 		main=n>0?s:"";
@@ -103,7 +103,7 @@ public class StringFunctions extends FileFunctions {
 	}
 	*/
 	public static String htmlspecialchars(String string) {
-		return str_ireplace("\"", "&quot;", str_ireplace("'", "&#039;", str_ireplace("<", "&lt;", str_ireplace(">", "&gt;", str_ireplace("&", "&amp;", string)))));
+		return strIreplace("\"", "&quot;", strIreplace("'", "&#039;", strIreplace("<", "&lt;", strIreplace(">", "&gt;", strIreplace("&", "&amp;", string)))));
 	}
 	public static String htmlentities(String string) {
 		return htmlspecialchars(string);
@@ -140,7 +140,7 @@ public class StringFunctions extends FileFunctions {
 	public static String substr(String string,int start) {
 		return string.substring(start);
 	}
-	public static String str_shuffle(String string) {
+	public static String strShuffle(String string) {
 		int len=string.length(),tem;
 		String st[]=string.split(""),swap;
 		for (int i = 1; i <= len; i++) {
@@ -157,21 +157,21 @@ public class StringFunctions extends FileFunctions {
 	 * The pattern syntax must be in Java format and not in PHP format.
 	 * PS:I have noticed normal regex syntax works preety well.
 	 */
-	public static boolean preg_match(String pattern,String string) {
+	public static boolean pregMatch(String pattern,String string) {
 		try {
 			return string.matches(pattern);
 		} catch (Exception e) {
 			return false;
 		}
 	}
-	public static String preg_replace(String pattern,String replace,String string) {
+	public static String pregReplace(String pattern,String replace,String string) {
 		try {
 			return string.replaceAll(pattern, replace);
 		} catch (Exception e) {
 			return "";
 		}
 	}
-	public static String[] preg_split(String pattern,String string){
+	public static String[] pregSplit(String pattern,String string){
 		try {
 			return string.split(pattern);
 		} catch (Exception e) {

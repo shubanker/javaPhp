@@ -8,10 +8,10 @@ Some of the functions are listed below.
     print()
 **String Functions**
 
-    str_replace()
-    str_ireplace()
+    strReplace()
+    strIreplace()
     strlen()
-    str_repeat()
+    strRepeat()
     htmlspecialchars()
     htmlentities()
     strtolower()
@@ -20,20 +20,20 @@ Some of the functions are listed below.
     strpos()
     stripos()
     substr()
-    str_shuffle()
-    preg_match()
-    preg_replace()
-    preg_split()
+    strShuffle()
+    pregMatch()
+    pregReplace()
+    pregSplit()
 **Array Functions**
 
-    print_r()
+    printR()
     emplode()
     explode()
     shuffle()
     count()
-    array_push()*
-    array_rand()
-    array_shift()*
+    arrayPush()*
+    arrayRand()
+    arrayShift()*
 **Math Functions**
 
     abs()
@@ -56,16 +56,16 @@ Some of the functions are listed below.
     floor()
 **File**
 
-    file_put_contents()
-    file_get_contents()
+    filePutContents()
+    fileGetContents()
     unlink()
     del()
     delete()
-    file_exists()
-    is_file()
-    is_dir()
-    is_readable()
-    is_writable() or is_writeable()
+    fileExists()
+    isFile()
+    isDir()
+    isReadable()
+    isWritable() or isWriteable()
     mkdir()
     rename()
     filesize()
@@ -74,19 +74,19 @@ Some of the functions are listed below.
     hash()
     md5()
     sha1()
-    password_hash()**
-    password_verify()**
+    passwordHash()**
+    passwordVerify()**
 **Extra Functions**
 
-    nth_occurance()
-    get_str_berween()
-    get_random_string()
-    get_input()
-    get_input_int()
-    get_input_float()
-    get_input_double()
-    get_input_long()
-    get_input_char()
+    nthOccurance()
+    getStrBerween()
+    getRandomString()
+    getInput()
+    getInputInt()
+    getInputFloat()
+    getInputDouble()
+    getInputLong()
+    getInputChar()
     isPrime()
 **there are some limitations on these functions.*
 

@@ -4,7 +4,7 @@ import java.util.Formatter;
 
 public class FileFunctions extends ArrayFunctions{
 	public static Formatter x;
-	public static boolean file_put_contents(String FileName,String data) {
+	public static boolean filePutContents(String FileName,String data) {
 		try{
 			x=new Formatter(FileName);
 		}catch(Exception e){
@@ -15,7 +15,7 @@ public class FileFunctions extends ArrayFunctions{
 		x.close();
 		return true;
 	}
-	public static String file_get_contents(String FileName) throws IOException{
+	public static String fileGetContents(String FileName) throws IOException{
 		//return "function Pending";
 		String s="";
 		int ch;
@@ -58,28 +58,28 @@ public class FileFunctions extends ArrayFunctions{
 	public static void delete(String Files[]) {
 		unlink(Files);
 	}
-	public static boolean file_exists(String FileName) {
+	public static boolean fileExists(String FileName) {
 		File f=new File(FileName);
 		return f.exists();
 	}
-	public static boolean is_file(String FileName) {
+	public static boolean isFile(String FileName) {
 		File f=new File(FileName);
 		return f.isFile();
 	}
-	public static boolean is_dir(String FileName) {
+	public static boolean isDir(String FileName) {
 		File f=new File(FileName);
 		return f.isDirectory();
 	}
-	public static boolean is_readable(String FileName) {
+	public static boolean isReadable(String FileName) {
 		File f=new File(FileName);
 		return f.canRead();
 	}
-	public static boolean is_writable(String FileName) {
+	public static boolean isWritable(String FileName) {
 		File f=new File(FileName);
 		return f.canWrite();
 	}
-	public static boolean is_writeable(String FileName) {
-		return is_writable(FileName);
+	public static boolean isWriteable(String FileName) {
+		return isWritable(FileName);
 	}
 	public static boolean mkdir(String FileName) {
 		File f=new File(FileName);

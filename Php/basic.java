@@ -134,8 +134,8 @@ public class basic{
 	 * End Of UnNecessary Methods.
 	 */
 	
-	//print_r
-	private static void print_r(String array[],int indent){
+	//printR
+	private static void printR(String array[],int indent){
 		String ind="";
 		while(indent-->0)
 			ind+="\t";
@@ -144,17 +144,17 @@ public class basic{
 			echo(ind+" ["+i+"] => "+array[i]+"\n");
 		echo(ind+")\n");
 	}
-	public static void print_r(String array[]){
-		print_r(array,0);
+	public static void printR(String array[]){
+		printR(array,0);
 	}
-	public static void print_r(String array[][]){
+	public static void printR(String array[][]){
 		echo("Array\n(\n");
 		for (int i = 0; i < array.length; i++) 
-			print_r(array[i],1);
+			printR(array[i],1);
 		echo(")\n");
 	}
 	
-	private static void print_r(int array[],int indent){
+	private static void printR(int array[],int indent){
 		String ind="";
 		while(indent-->0)
 			ind+="\t";
@@ -163,16 +163,16 @@ public class basic{
 			echo(ind+" ["+i+"] => "+array[i]+"\n");
 		echo(ind+")\n");
 	}
-	public static void print_r(int array[]){
-		print_r(array,0);
+	public static void printR(int array[]){
+		printR(array,0);
 	}
-	public static void print_r(int array[][]){
+	public static void printR(int array[][]){
 		echo("Array\n(\n");
 		for (int i = 0; i < array.length; i++) 
-			print_r(array[i],1);
+			printR(array[i],1);
 		echo(")\n");
 	}
-	private static void print_r(double array[],int indent){
+	private static void printR(double array[],int indent){
 		String ind="";
 		while(indent-->0)
 			ind+="\t";
@@ -181,13 +181,13 @@ public class basic{
 			echo(ind+" ["+i+"] => "+array[i]+"\n");
 		echo(ind+")\n");
 	}
-	public static void print_r(double array[]){
-		print_r(array,0);
+	public static void printR(double array[]){
+		printR(array,0);
 	}
-	public static void print_r(double array[][]){
+	public static void printR(double array[][]){
 		echo("Array\n(\n");
 		for (int i = 0; i < array.length; i++) 
-			print_r(array[i],1);
+			printR(array[i],1);
 		echo(")\n");
 	}
 }

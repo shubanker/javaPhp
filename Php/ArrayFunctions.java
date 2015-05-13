@@ -77,7 +77,7 @@ public class ArrayFunctions extends MathFunctions{
 	public static int count(int array[]){return array.length;}
 	public static int count(Double array[]){return array.length;}
 
-	public static int[] array_push(int array[],int value[]) {
+	public static int[] arrayPush(int array[],int value[]) {
 		int a[]=new int[array.length+value.length];
 		for (int i = 0; i < array.length; i++) {
 			a[i]=array[i];
@@ -88,11 +88,11 @@ public class ArrayFunctions extends MathFunctions{
 		}
 		return a;
 	}
-	public static int[] array_push(int array[],int value) {
+	public static int[] arrayPush(int array[],int value) {
 		int a[]={value};
-		return array_push(array, a);
+		return arrayPush(array, a);
 	}
-	public static double[] array_push(double array[],double value[]) {
+	public static double[] arrayPush(double array[],double value[]) {
 		double a[]=new double[array.length+value.length];
 		for (int i = 0; i < array.length; i++) {
 			a[i]=array[i];
@@ -103,11 +103,11 @@ public class ArrayFunctions extends MathFunctions{
 		}
 		return a;
 	}
-	public static double[] array_push(double array[],double value) {
+	public static double[] arrayPush(double array[],double value) {
 		double a[]={value};
-		return array_push(array, a);
+		return arrayPush(array, a);
 	}
-	public static String[] array_push(String array[],String value[]) {
+	public static String[] arrayPush(String array[],String value[]) {
 		String a[]=new String[array.length+value.length];
 		for (int i = 0; i < array.length; i++) {
 			a[i]=array[i];
@@ -118,37 +118,37 @@ public class ArrayFunctions extends MathFunctions{
 		}
 		return a;
 	}
-	public static String[] array_push(String array[],String value) {
+	public static String[] arrayPush(String array[],String value) {
 		String a[]={value};
-		return array_push(array, a);
+		return arrayPush(array, a);
 		
 	}
 	
 
-	public static int array_rand(int array[]) {
+	public static int arrayRand(int array[]) {
 		return rand(array.length-1);
 	}
-	public static int[] array_rand(int array[],int number) {
+	public static int[] arrayRand(int array[],int number) {
 		int output[]=new int[number];
 		for (int i = 0; i < output.length; i++) {
 			output[i]=rand(array.length-1);
 		}
 		return output;
 	}
-	public static int array_rand(String array[]) {
+	public static int arrayRand(String array[]) {
 		return rand(array.length-1);
 	}
-	public static int[] array_rand(String array[],int number) {
+	public static int[] arrayRand(String array[],int number) {
 		int output[]=new int[number];
 		for (int i = 0; i < output.length; i++) {
 			output[i]=rand(array.length-1);
 		}
 		return output;
 	}
-	public static int array_rand(double array[]) {
+	public static int arrayRand(double array[]) {
 		return rand(array.length-1);
 	}
-	public static int[] array_rand(double array[],int number) {
+	public static int[] arrayRand(double array[],int number) {
 		int output[]=new int[number];
 		for (int i = 0; i < output.length; i++) {
 			output[i]=rand(array.length-1);
@@ -157,15 +157,15 @@ public class ArrayFunctions extends MathFunctions{
 	}
 	
 	/*
-	 * array_shift can not work like in php,
+	 * arrayShift can not work like in php,
 	 * as it is not possible to modify the length of the array from an method unless,
 	 * the variable is declared with the gobal scope(outside all the functions)
 	 * the way user need to use this in java is by assigning the returned value to the variable.
 	 * example:
-	 * array=array_shift(array);//Note in PHP we only need to call array_shift(array) and it would return the first element of array and modify the array.
+	 * array=arrayShift(array);//Note in PHP we only need to call arrayShift(array) and it would return the first element of array and modify the array.
 	 * 
 	 */
-	public static int[] array_shift(int array[]){
+	public static int[] arrayShift(int array[]){
 //		int a=array[0];
 		int tem[]=new int[array.length-1];
 		for (int i = 0; i < tem.length; i++) {
@@ -174,19 +174,19 @@ public class ArrayFunctions extends MathFunctions{
 		return tem;
 //		int garbage[]=array;
 //		array=tem;
-//		print_r(array);
+//		printR(array);
 //		garbage=null;
 //		System.gc();
 //		return a;
 	}
-	public static String[] array_shift(String array[]){
+	public static String[] arrayShift(String array[]){
 		String tem[]=new String[array.length-1];
 		for (int i = 0; i < tem.length; i++) {
 			tem[i]=array[i+1];
 		}
 		return tem;
 	}
-	public static double[] array_shift(double array[]){
+	public static double[] arrayShift(double array[]){
 		double tem[]=new double[array.length-1];
 		for (int i = 0; i < tem.length; i++) {
 			tem[i]=array[i+1];

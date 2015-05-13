@@ -6,7 +6,7 @@ public class ExtraFunctions extends Security {
 	
 	
 	
-	public static int nth_occurance(String string,String match,int n) {
+	public static int nthOccurance(String string,String match,int n) {
 		int position=-1,start=0;
 		for(int i=0;i<n;i++){
 			position=string.indexOf(match,start);
@@ -20,9 +20,9 @@ public class ExtraFunctions extends Security {
 		
 	}
 	
-	public static String get_str_berween(String string,String start,String end,int n) {
+	public static String getStrBerween(String string,String start,String end,int n) {
 		string=" "+string;
-		int ini=nth_occurance(string, start, n);
+		int ini=nthOccurance(string, start, n);
 		if (ini==-1) {
 			return "";
 		}
@@ -30,30 +30,30 @@ public class ExtraFunctions extends Security {
 		int len=string.indexOf(end, ini);
 		return string.substring(ini, len);
 	}
-	public static String get_str_berween(String string,String start,String end) {
-		return get_str_berween(string, start, end,1);
+	public static String getStrBerween(String string,String start,String end) {
+		return getStrBerween(string, start, end,1);
 	}
 	
 	//To get a random String in an range of length
-	public static String get_random_string(int min,int max) throws Exception {
+	public static String getRandomString(int min,int max) throws Exception {
 		String output="";
 		while(output.length()<max){
 			output+=hash("sha512", Math.random()+"");
 		}
-		output=str_shuffle(output);
+		output=strShuffle(output);
 		return substr(output, 0, rand(min, max));
 	}
 	//To get an random string of fixed length
-	public static String get_random_string(int size) throws Exception {
-		return get_random_string(size,size);
+	public static String getRandomString(int size) throws Exception {
+		return getRandomString(size,size);
 	}
 	//To get an random String of random length( between 3 to 100)
-	public static String get_random_string() throws Exception {
+	public static String getRandomString() throws Exception {
 //		int tem=rand(3, 100);
-		return get_random_string(rand(3, 100));
+		return getRandomString(rand(3, 100));
 	}
 	
-	public static String get_input(String prompt) {
+	public static String getInput(String prompt) {
 		BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
 		
 		if(prompt!=null){
@@ -68,50 +68,50 @@ public class ExtraFunctions extends Security {
 		}
 		
 	}
-	public static String get_input() {
-		return get_input(null);
+	public static String getInput() {
+		return getInput(null);
 	}
-	public static byte get_input_byte(String prompt) {
-		return Byte.parseByte(get_input(prompt));
+	public static byte getInputByte(String prompt) {
+		return Byte.parseByte(getInput(prompt));
 	}
-	public static byte get_input_byte() {
-		return Byte.parseByte(get_input(null));
+	public static byte getInputByte() {
+		return Byte.parseByte(getInput(null));
 	}
-	public static short get_input_short(String prompt) {
-		return Short.parseShort(get_input(prompt));
+	public static short getInputShort(String prompt) {
+		return Short.parseShort(getInput(prompt));
 	}
-	public static short get_input_short() {
-		return Short.parseShort(get_input(null));
+	public static short getInputShort() {
+		return Short.parseShort(getInput(null));
 	}
-	public static int get_input_int(String prompt) {
-		return Integer.parseInt(get_input(prompt));
+	public static int getInputInt(String prompt) {
+		return Integer.parseInt(getInput(prompt));
 	}
-	public static int get_input_int() {
-		return Integer.parseInt(get_input(null));
+	public static int getInputInt() {
+		return Integer.parseInt(getInput(null));
 	}
-	public static float get_input_float(String prompt) {
-		return Float.parseFloat(get_input(prompt));
+	public static float getInputFloat(String prompt) {
+		return Float.parseFloat(getInput(prompt));
 	}
-	public static float get_input_float() {
-		return Float.parseFloat(get_input(null));
+	public static float getInputFloat() {
+		return Float.parseFloat(getInput(null));
 	}
-	public static double get_input_double(String prompt) {
-		return Double.parseDouble(get_input(prompt));
+	public static double getInputDouble(String prompt) {
+		return Double.parseDouble(getInput(prompt));
 	}
-	public static double get_input_double() {
-		return Double.parseDouble(get_input(null));
+	public static double getInputDouble() {
+		return Double.parseDouble(getInput(null));
 	}
-	public static long get_input_long(String prompt) {
-		return Long.parseLong(get_input(prompt));
+	public static long getInputLong(String prompt) {
+		return Long.parseLong(getInput(prompt));
 	}
-	public static long get_input_long() {
-		return Long.parseLong(get_input(null));
+	public static long getInputLong() {
+		return Long.parseLong(getInput(null));
 	}
-	public static char get_input_char(String prompt) {
-		return get_input(prompt).charAt(0);
+	public static char getInputChar(String prompt) {
+		return getInput(prompt).charAt(0);
 	}
-	public static char get_input_char() {
-		return get_input(null).charAt(0);
+	public static char getInputChar() {
+		return getInput(null).charAt(0);
 	}
 	/*
 	public static boolean isPrimeOld(int number){

@@ -50,7 +50,7 @@ public class Security extends StringFunctions {
 	public static String sha1(Double string)throws Exception {
 		return md5(string+"");
 	}
-	public static String password_hash(String password,int cost) {
+	public static String passwordHash(String password,int cost) {
 //		String generatedSecuredPasswordHash="BCrypt UnAvailable";
 //		generatedSecuredPasswordHash = BCrypt.hashpw(password, BCrypt.gensalt(cost));
 //		return generatedSecuredPasswordHash;
@@ -60,10 +60,10 @@ public class Security extends StringFunctions {
 			return "BCrypt UnAvailable";
 		}
 	}
-	public static String password_hash(String password) {
-		return password_hash(password, 10);
+	public static String passwordHash(String password) {
+		return passwordHash(password, 10);
 	}
-	public static boolean password_verify(String password,String hash) {
+	public static boolean passwordVerify(String password,String hash) {
 		try {
 			return BCrypt.checkpw(password, hash);
 		} catch (Exception e) {

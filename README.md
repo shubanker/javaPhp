@@ -78,15 +78,15 @@ Some of the functions are listed below.
     password_verify()**
 **Extra Functions**
 
-    nthoccurance()
+    nth_occurance()
     get_str_berween()
     get_random_string()
-    getInput()
-    getInputInt()
-    getInputFloat()
-    getInputDouble()
-    getInputLong()
-    getInputChar()
+    get_input()
+    get_input_int()
+    get_input_float()
+    get_input_double()
+    get_input_long()
+    get_input_char()
     isPrime()
 **there are some limitations on these functions.*
 

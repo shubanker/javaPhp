@@ -12,7 +12,7 @@ public class basic{
 	public static void echo(byte[] sting){System.out.print(sting.toString());}
 	
 	
-	//Something Extra
+	//Printing array in saperate lines.
 	public static void echo(String sting[]){
 		for (String s : sting) {
 			System.out.println(s);
@@ -69,31 +69,31 @@ public class basic{
 	public static void echoln(byte[] sting){System.out.println(sting.toString());}
 	public static void echoln(boolean sting){System.out.println(sting);}
 	
-	public static void echonl(String sting){System.out.println(sting);}
-	public static void echonl(int sting){System.out.println(sting);}
-	public static void echonl(double sting){System.out.println(sting);}
-	public static void echonl(float sting){System.out.print(sting);}
-	public static void echonl(char sting){System.out.println(sting);}
-	public static void echonl(char[] sting){System.out.println(sting);}
-	public static void echonl(Object obj){System.out.print(obj);}
-	public static void echonl(byte[] sting){System.out.println(sting.toString());}
-	public static void echonl(boolean sting){System.out.println(sting);}
+//	public static void echonl(String sting){System.out.println(sting);}
+//	public static void echonl(int sting){System.out.println(sting);}
+//	public static void echonl(double sting){System.out.println(sting);}
+//	public static void echonl(float sting){System.out.print(sting);}
+//	public static void echonl(char sting){System.out.println(sting);}
+//	public static void echonl(char[] sting){System.out.println(sting);}
+//	public static void echonl(Object obj){System.out.print(obj);}
+//	public static void echonl(byte[] sting){System.out.println(sting.toString());}
+//	public static void echonl(boolean sting){System.out.println(sting);}
 	
 	
 	
 
-	public static void printnl(String sting){System.out.println(sting);}
-	public static void printnl(int sting){System.out.print(sting);}
-	public static void printnl(double sting){System.out.println(sting);}
-	public static void printnl(String sting[]){echonl(sting);}
-	public static void printnl(int sting[]){echonl(sting);}
-	public static void printnl(double sting[]){echo(sting);}
-	public static void printnl(float sting){System.out.println(sting);}
-	public static void printnl(char sting){System.out.println(sting);}
-	public static void printnl(char[] sting){System.out.println(sting);}
-	public static void printnl(Object obj){System.out.println(obj);}
-	public static void printnl(boolean sting){System.out.println(sting);}
-	public static void printnl(byte[] sting){System.out.println(sting.toString());}
+//	public static void printnl(String sting){System.out.println(sting);}
+//	public static void printnl(int sting){System.out.print(sting);}
+//	public static void printnl(double sting){System.out.println(sting);}
+//	public static void printnl(String sting[]){echonl(sting);}
+//	public static void printnl(int sting[]){echonl(sting);}
+//	public static void printnl(double sting[]){echo(sting);}
+//	public static void printnl(float sting){System.out.println(sting);}
+//	public static void printnl(char sting){System.out.println(sting);}
+//	public static void printnl(char[] sting){System.out.println(sting);}
+//	public static void printnl(Object obj){System.out.println(obj);}
+//	public static void printnl(boolean sting){System.out.println(sting);}
+//	public static void printnl(byte[] sting){System.out.println(sting.toString());}
 	
 	
 
@@ -115,19 +115,19 @@ public class basic{
 
 	
 	//Sop
-	public static void sop(String sting){System.out.print(sting);}
-	public static void sop(int sting){System.out.print(sting);}
-	public static void sop(double sting){System.out.print(sting);}
-	
-	public static void sopnl(String sting){System.out.println(sting);}
-	public static void sopnl(int sting){System.out.println(sting);}
-	public static void sopnl(double sting){System.out.println(sting);}
-	
-	public static void sop(String sting[]){echo(sting);}
-	public static void sop(int sting[]){echo(sting);}
-	public static void sop(double sting[]){echo(sting);}
-	
-	public static void sop(byte[] sting){echo(sting.toString()+"");}
+//	public static void sop(String sting){System.out.print(sting);}
+//	public static void sop(int sting){System.out.print(sting);}
+//	public static void sop(double sting){System.out.print(sting);}
+//	
+//	public static void sopnl(String sting){System.out.println(sting);}
+//	public static void sopnl(int sting){System.out.println(sting);}
+//	public static void sopnl(double sting){System.out.println(sting);}
+//	
+//	public static void sop(String sting[]){echo(sting);}
+//	public static void sop(int sting[]){echo(sting);}
+//	public static void sop(double sting[]){echo(sting);}
+//	
+//	public static void sop(byte[] sting){echo(sting.toString()+"");}
 	
 	
 	/*

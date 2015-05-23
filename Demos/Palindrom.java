@@ -2,7 +2,7 @@ package Demos;
 import Php.Php;
 public class Palindrom {
 	public static void main(String[] args) {
-		int n=Php.get_input_int("Enter a number");
-//		Php.echo("The number is "+()+"Palindrom");
+		String s=Php.get_input("Enter a String");
+		Php.echo("The String is "+(s.compareTo(Php.reverse(s))==0?"":"not ")+"Palindrom");
 	}
 }

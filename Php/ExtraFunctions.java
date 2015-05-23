@@ -154,4 +154,11 @@ public class ExtraFunctions extends Security {
 		}
 		return true;
 	}
+	public static String reverse(String string) {
+		return reverse(new StringBuffer(string));
+	}
+	public static String reverse(StringBuffer string) {
+		return string.reverse().toString();
+	}
+	
 }

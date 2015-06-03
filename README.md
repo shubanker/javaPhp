@@ -1,8 +1,11 @@
 ## JavaPhp ##
 A library bundled with some of the awesome functions available in Php.
-Some extra functions have been included as well which are not available in Php
-Some of the functions are listed below.
-### Functions Available: ###
+Some extra functions have been included as well which are not available in Php.
+
+###### If you Prefer camelCasing over Php style there is also a branch with methods named in camelCasing style.
+
+##### Some of the functions avilable are listed below.
+### Functions Available:
 
     echo()
     print()
@@ -88,6 +91,7 @@ Some of the functions are listed below.
     get_input_long()
     get_input_char()
     is_prime()
+    reverse()
 **there are some limitations on these functions.*
 
 ***This functions uses an external class [BCrypt](http://www.mindrot.org/projects/jBCrypt/) by [mindrot.org](http://www.mindrot.org)*

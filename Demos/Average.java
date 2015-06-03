@@ -9,7 +9,7 @@ public class Average {
 				sum+=Php.get_input_int("Enter the number or to exit Enter any character.");
 				n++;
 			} catch (Exception e) {
-				break;
+				break;//Exit when a non numerical value is entered.
 			}
 		}
 		Php.echo("Average = ");

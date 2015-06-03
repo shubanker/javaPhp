@@ -1,7 +1,7 @@
 package Demos;
 import Php.Php;
 /*
- * A Simple Number Gussing Gane
+ * A Simple Number guessing Game
  */
 public class RandGame {
 

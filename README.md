@@ -2,7 +2,7 @@
 A library bundled with some of the awesome functions available in Php.
 Some extra functions have been included as well which are not available in Php.
 
-###### If you Prefer camelCasing over Php style there is also a branch with methods named in camelCasing style.
+###### This is the camelCasing version of JavaPhp.
 
 ##### Some of the functions avilable are listed below.
 ### Functions Available:

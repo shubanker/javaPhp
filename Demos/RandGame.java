@@ -12,7 +12,7 @@ public class RandGame {
 		while (points>0&&points<20) {
 			try {
 				//Taking an integer as input and if it matches random number increment point by one else -1
-				points+=(n=Php.rand(0, upperLimit))==Php.get_input_int("Enter a number between 0-"+upperLimit)?2:-1;
+				points+=(n=Php.rand(0, upperLimit))==Php.getInputInt("Enter a number between 0-"+upperLimit)?2:-1;
 			} catch (Exception e) {
 				Php.echo("Enter a number");
 			}

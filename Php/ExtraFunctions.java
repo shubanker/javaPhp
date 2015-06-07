@@ -160,5 +160,32 @@ public class ExtraFunctions extends Security {
 	public static String reverse(StringBuffer string) {
 		return string.reverse().toString();
 	}
+	public static int reverse(int n) {
+		int op=0;
+		while (n>0) {
+			op=op*10+(n%10);
+			n/=10;
+		}
+		return op;
+	}
 	
+	//For maintaining the units
+//	public static int reverse(int n) {
+//		int op=0,tem=0;
+//		//Removing all zeros from end.
+//		while (n%10==0) {
+//			tem++;
+//			n/=10;
+//		}
+//		//Reversing number
+//		while (n>0) {
+//			op=op*10+(n%10);
+//			n/=10;
+//		}
+////		while (tem-->0) {
+////			op*=10;
+////		}
+//		op*=Math.pow(10, tem);//Finally Adding Zeroes.
+//		return op;
+//	}
 }

@@ -178,5 +178,8 @@ public class StringFunctions extends FileFunctions {
 			return null;
 		}
 	}
+	public static String[] str_split(String string){
+		return array_shift(preg_split("", string));
+	}
 	
 }

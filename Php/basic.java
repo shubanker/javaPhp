@@ -147,6 +147,9 @@ public class basic{
 	public static void print_r(String array[]){
 		print_r(array,0);
 	}
+	public static void print_r(char array[]){
+		print_r(StringFunctions.chartostr(array),0);
+	}
 	public static void print_r(String array[][]){
 		echo("Array\n(\n");
 		for (int i = 0; i < array.length; i++) 

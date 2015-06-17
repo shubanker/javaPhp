@@ -1,6 +1,23 @@
 package Php;
 
 public class StringFunctions extends FileFunctions {
+	
+	public static char[] strtochar(String s[]) {
+		int l=s.length;
+		char op[]=new char[l];
+		for (int i = 0; i < l; i++) {
+			op[i]=s[i].charAt(0);
+		}
+		return op;
+	}
+	public static String[] chartostr(char s[]) {
+		int l=s.length;
+		String op[]=new String[l];
+		for (int i = 0; i < l; i++) {
+			op[i]=s[i]+"";
+		}
+		return op;
+	}
 	public static String str_replace(String search,String replace,String subject){
 		return subject.replaceAll(search, replace);
 	}
@@ -178,8 +195,8 @@ public class StringFunctions extends FileFunctions {
 			return null;
 		}
 	}
-	public static String[] str_split(String string){
-		return array_shift(preg_split("", string));
+	public static char[] str_split(String string){
+		return strtochar(array_shift(preg_split("", string)));
 	}
 	
 }

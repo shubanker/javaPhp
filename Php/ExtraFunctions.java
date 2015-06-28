@@ -5,7 +5,9 @@ import java.io.InputStreamReader;
 public class ExtraFunctions extends Security {
 	
 	
-	
+	/*
+	 * Returns position of nth occurance of a substring inside a string.
+	 */
 	public static int nth_occurance(String string,String match,int n) {
 		int position=-1,start=0;
 		for(int i=0;i<n;i++){
@@ -20,6 +22,9 @@ public class ExtraFunctions extends Security {
 		
 	}
 	
+	/*
+	 * Get string berween two sub-string starting with nth occurance of start string.
+	 */ 
 	public static String get_str_berween(String string,String start,String end,int n) {
 		string=" "+string;
 		int ini=nth_occurance(string, start, n);
@@ -30,6 +35,7 @@ public class ExtraFunctions extends Security {
 		int len=string.indexOf(end, ini);
 		return string.substring(ini, len);
 	}
+	//Get string between  two string.
 	public static String get_str_berween(String string,String start,String end) {
 		return get_str_berween(string, start, end,1);
 	}
@@ -49,10 +55,12 @@ public class ExtraFunctions extends Security {
 	}
 	//To get an random String of random length( between 3 to 100)
 	public static String get_random_string() throws Exception {
-//		int tem=rand(3, 100);
 		return get_random_string(rand(3, 100));
 	}
 	
+	/*
+	 * Take input from user while displaying message.
+	 */
 	public static String get_input(String prompt) {
 		BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
 		
@@ -147,26 +155,12 @@ public class ExtraFunctions extends Security {
 		}
 		int sqrt=(int)Math.ceil(Math.sqrt(number)),tem=5;
 		while (tem<=sqrt) {
-			if (number%tem==0||number%(tem+2)==0||number%(tem+4)==0) {
+			if (number%tem==0||number%(tem+2)==0||number%(tem+4)==0) {//Skipping checking divisibility by numbers known to be divisible by 3.
 				return false;
 			}
 			tem+=8;
 		}
 		return true;
-	}
-	public static String reverse(String string) {
-		return reverse(new StringBuffer(string));
-	}
-	public static String reverse(StringBuffer string) {
-		return string.reverse().toString();
-	}
-	public static int reverse(int n) {
-		int op=0;
-		while (n>0) {
-			op=op*10+(n%10);
-			n/=10;
-		}
-		return op;
 	}
 	
 	//For maintaining the units

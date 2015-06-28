@@ -196,7 +196,33 @@ public class StringFunctions extends FileFunctions {
 		}
 	}
 	public static char[] str_split(String string){
-		return strtochar(array_shift(preg_split("", string)));
+		return string.toCharArray();
 	}
-	
+	public static String ucfirst(String string) {
+		return Character.toUpperCase(string.charAt(0)) + string.substring(1);
+	}
+	public static String ucwords(String string) {
+		String s[]=string.split(" ");
+		StringBuffer sb=new StringBuffer();
+		for (String string2 : s) {
+			sb.append(" "+ucfirst(string2));
+		}
+		sb.deleteCharAt(0);
+		return sb.toString();
+	}
+	public static String strrev(String string) {
+		return strrev(new StringBuffer(string));
+	}
+	public static String strrev(StringBuffer string) {
+		return string.reverse().toString();
+	}
+	//Reverse a number.
+	public static int strrev(int n) {
+		int op=0;
+		while (n>0) {
+			op=op*10+(n%10);
+			n/=10;
+		}
+		return op;
+	}
 }

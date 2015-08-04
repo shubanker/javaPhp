@@ -1,6 +1,23 @@
 package Php;
 
 public class StringFunctions extends FileFunctions {
+	
+	public static char[] strtochar(String s[]) {
+		int l=s.length;
+		char op[]=new char[l];
+		for (int i = 0; i < l; i++) {
+			op[i]=s[i].charAt(0);
+		}
+		return op;
+	}
+	public static String[] chartostr(char s[]) {
+		int l=s.length;
+		String op[]=new String[l];
+		for (int i = 0; i < l; i++) {
+			op[i]=s[i]+"";
+		}
+		return op;
+	}
 	public static String strReplace(String search,String replace,String subject){
 		return subject.replaceAll(search, replace);
 	}
@@ -178,5 +195,43 @@ public class StringFunctions extends FileFunctions {
 			return null;
 		}
 	}
-	
+	public static char[] str_split(String string){
+		return string.toCharArray();
+	}
+	public static String ucfirst(String string) {
+		return Character.toUpperCase(string.charAt(0)) + string.substring(1);
+	}
+	public static String ucwords(String string) {
+		String s[]=string.split(" ");
+		StringBuffer sb=new StringBuffer();
+		for (String string2 : s) {
+			sb.append(" "+ucfirst(string2));
+		}
+		sb.deleteCharAt(0);
+		return sb.toString();
+	}
+	public static String strrev(String string) {
+		return strrev(new StringBuffer(string));
+	}
+	public static String strrev(StringBuffer string) {
+		return string.reverse().toString();
+	}
+	//Reverse a number.
+	public static int strrev(int n) {
+		int op=0;
+		while (n>0) {
+			op=op*10+(n%10);
+			n/=10;
+		}
+		return op;
+	}
+	public static char chr(int ascii) {
+		return (char)ascii;
+	}
+	public static int ord(char character) {
+		return (int)character;
+	}
+	public static int ord(String character) {
+		return ord(character.charAt(0));
+	}
 }

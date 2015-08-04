@@ -186,6 +186,13 @@ public class ArrayFunctions extends MathFunctions{
 		}
 		return tem;
 	}
+	public static char[] arrayShift(char array[]){
+		char tem[]=new char[array.length-1];
+		for (int i = 0; i < tem.length; i++) {
+			tem[i]=array[i+1];
+		}
+		return tem;
+	}
 	public static double[] arrayShift(double array[]){
 		double tem[]=new double[array.length-1];
 		for (int i = 0; i < tem.length; i++) {

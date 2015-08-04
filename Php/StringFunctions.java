@@ -225,4 +225,13 @@ public class StringFunctions extends FileFunctions {
 		}
 		return op;
 	}
+	public static char chr(int ascii) {
+		return (char)ascii;
+	}
+	public static int ord(char character) {
+		return (int)character;
+	}
+	public static int ord(String character) {
+		return ord(character.charAt(0));
+	}
 }

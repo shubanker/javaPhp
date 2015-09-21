@@ -37,6 +37,7 @@ Some extra functions have been included as well which are not available in Php.
     array_push()*
     array_rand()
     array_shift()*
+    array_sum()
 **Math Functions**
 
     abs()

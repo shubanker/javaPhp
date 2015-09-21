@@ -7,8 +7,9 @@ public class ArrayFunctions extends MathFunctions{
 	}
 	public static String emplode(String array[],String seperator){
 		String tem="";
-		for(int i=0;i<array.length-1;i++)
+		for(int i=0;i<array.length-1;i++){
 			tem+=array[i]+seperator;
+		}
 		tem+=array[array.length-1];
 		return tem;
 	}
@@ -199,5 +200,22 @@ public class ArrayFunctions extends MathFunctions{
 			tem[i]=array[i+1];
 		}
 		return tem;
+	}
+	public static int arraySum(int array[]) {
+		int sum=0;
+		for (int i : array) {
+			sum+=i;
+		}
+		return sum;
+	}
+	public static double arraySum(double array[]) {
+		double sum=0;
+		for (double i : array) {
+			sum+=i;
+		}
+		return sum;
+	}
+	public static String arraySum(String array[]) {
+		return ArrayFunctions.emplode(array);
 	}
 }

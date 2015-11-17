@@ -98,4 +98,18 @@ public class MathFunctions extends basic {
 	public static double floor(double number) {
 		return Math.floor(number);
 	}
+	
+	private static int cmpare(int ar[],boolean ismax) {
+		int a=0;
+		for (int i = 1; i < ar.length; i++) {
+			a=ismax?(ar[a]>ar[i]?a:i):(ar[a]<ar[i]?a:i);
+		}
+		return ar[a];
+	}
+	public static int max(int array[]) {
+		return cmpare(array, true);
+	}
+	public static int min(int array[]) {
+		return cmpare(array, false);
+	}
 }

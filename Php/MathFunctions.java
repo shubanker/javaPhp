@@ -112,4 +112,7 @@ public class MathFunctions extends basic {
 	public static int min(int array[]) {
 		return cmpare(array, false);
 	}
+	public static float avg(int array[]) {
+		return (float)ArrayFunctions.array_sum(array)/array.length;
+	}
 }

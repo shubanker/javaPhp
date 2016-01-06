@@ -155,10 +155,10 @@ public class ExtraFunctions extends Security {
 		}
 		int sqrt=(int)Math.ceil(Math.sqrt(number)),tem=5;
 		while (tem<=sqrt) {
-			if (number%tem==0||number%(tem+2)==0||number%(tem+4)==0) {//Skipping checking divisibility by numbers known to be divisible by 3.
+			if (number%tem==0||number%(tem+2)==0) {//Skipping checking divisibility by numbers known to be divisible by 3.
 				return false;
 			}
-			tem+=8;
+			tem+=6;
 		}
 		return true;
 	}

@@ -234,4 +234,14 @@ public class StringFunctions extends FileFunctions {
 	public static int ord(String character) {
 		return ord(character.charAt(0));
 	}
+	public static String strchr(String string,String search,boolean before_search) {
+		if (before_search) {
+			return string.substring(0,string.indexOf(search));
+		}else {
+			return string.substring(string.indexOf(search));
+		}
+	}
+	public static String strchr(String string,String search){
+		return strchr(string, search, false);
+	}
 }

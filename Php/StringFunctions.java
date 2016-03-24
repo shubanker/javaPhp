@@ -166,7 +166,7 @@ public class StringFunctions extends FileFunctions {
 			st[i]=st[tem];
 			st[tem]=swap;
 		}
-		return emplode(st);
+		return implode(st);
 	}
 	
 	/*

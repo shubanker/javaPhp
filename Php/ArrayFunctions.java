@@ -2,10 +2,10 @@ package Php;
 
 public class ArrayFunctions extends MathFunctions{
 	
-	public static String emplode(String array[]){
-		return emplode(array,"");
+	public static String implode(String array[]){
+		return implode(array,"");
 	}
-	public static String emplode(String array[],String seperator){
+	public static String implode(String array[],String seperator){
 		String tem="";
 		for(int i=0;i<array.length-1;i++){
 			tem+=array[i]+seperator;
@@ -216,6 +216,6 @@ public class ArrayFunctions extends MathFunctions{
 		return sum;
 	}
 	public static String array_sum(String array[]) {
-		return ArrayFunctions.emplode(array);
+		return ArrayFunctions.implode(array);
 	}
 }

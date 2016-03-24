@@ -30,7 +30,7 @@ Some extra functions have been included as well which are not available in Php.
 **Array Functions**
 
     print_r()
-    emplode()
+    implode()
     explode()
     shuffle()
     count()

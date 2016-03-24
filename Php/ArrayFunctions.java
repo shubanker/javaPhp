@@ -13,6 +13,12 @@ public class ArrayFunctions extends MathFunctions{
 		tem+=array[array.length-1];
 		return tem;
 	}
+	public static String join(String array[]) {
+		return implode(array,"");
+	}
+	public static String join(String array[],String seperator) {
+		return implode(array,seperator);
+	}
 	public static String[] explode(String delimiter,String text){
 		String temArray[]= text.split(delimiter);
 		

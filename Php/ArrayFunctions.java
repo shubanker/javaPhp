@@ -224,4 +224,18 @@ public class ArrayFunctions extends MathFunctions{
 	public static String array_sum(String array[]) {
 		return ArrayFunctions.implode(array);
 	}
+	public static int[] range(int start,int end,int step) {
+		int size=(int)(end-start)/step;
+		int array[] = new int[size];
+		for (int i = 0; i < size; i++) {
+			array[i]=start+step*i;
+		}
+		return array;
+	}
+	public static int[] range(int start,int end) {
+		return range(start, end, start<end?1:-1);
+	}
+	public static int[] range(int limit) {
+		return range(0, limit, limit>0?1:-1);
+	}
 }
